@@ -1,0 +1,535 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+.logo{
+    margin-top: 15px;
+}
+#responsivelogo{
+    display: none;
+}
+header{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #E5E5E5;
+}
+.header-animate{
+    background-color: #E5E5E5;
+    opacity:.7;
+    animation: headerEffect 1s;
+    -webkit-animation: headerEffect 1s;
+}
+@keyframes headerEffect{
+    from{
+        top:-80px;
+    }
+    to{
+        top: 0;
+    }
+}
+ul li a{
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 27px;
+    color: rgba(34, 38, 42, 1);
+}
+.icons ul li{
+    padding-left: 30px;
+}
+.icons{
+    margin-left: 120px;
+}
+.menu .menu-bar{
+    padding-left: 35px;
+}
+/* header-end */
+/* banner start */
+.banner{
+    padding-top: 515px;
+    padding-bottom: 100px;
+    background-image: url(./assets/images/Banner/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.banner-content{
+    margin-left: 150px;
+}
+.banner-content h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #22262A;
+}
+.banner-content h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 80px;
+    font-weight: 700;
+    color: #22262A;
+}
+.banner-content h3{
+    font-weight: 500;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    color: #22262A;
+}
+.banner-btn .btn{
+    padding: 10px 30px;
+    background: #22262A;
+    margin-top: 35px;
+}
+.discover{
+    margin-right: 35px;
+}
+.banner-btn .btn h3{
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+/* Banner-end */
+.catagory{
+    margin-top: 125px;
+    margin-bottom: 120px;
+}
+.mask-section1{
+    margin-bottom: 25px;
+}
+#mask-img1{
+    padding-right: 25px;
+}
+.mask-section2{
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    top: 0;
+}
+.mask-section2 img{
+    position: relative;
+    height: 100%;
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:rgb(0, 0, 0, 0.7);
+    z-index: 2;
+    opacity: 0;
+    transition: 0.4s ease-in;
+    -webkit-transition: 0.4s ease-in;
+    -moz-transition: 0.4s ease-in;
+    -ms-transition: 0.4s ease-in;
+    -o-transition: 0.4s ease-in;
+}
+.catagory-btn{
+    position: absolute;
+    width: auto;
+    bottom: 0px;
+    left: 20px;
+    z-index: 3;
+    padding: 10px 25px;
+    background-color: #FFFFFF;
+    opacity: 0;
+    transition: 0.5 ease-in;
+    -webkit-transition: 0.5 ease-in;
+    -moz-transition: 0.5 ease-in;
+    -ms-transition: 0.5 ease-in;
+    -o-transition: 0.5 ease-in;
+}
+.catagory-btn h4{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    color: #22262A;
+}
+.mask-section2:hover .overlay{
+    opacity: .5;
+}
+.mask-section2:hover .catagory-btn{
+    opacity: 1;
+    bottom: 20px;
+}
+/* catagory section end */
+/* Women's Fashion */
+.w-fashion-heading{
+    margin-bottom: 70px;
+}
+.w-fashion-heading h2{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #22262A;
+    text-transform: uppercase;
+}
+.w-fashion-heading p{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    color: #22262A;
+}
+.card{
+    width: 268px;
+    border: none !important;
+}
+.card-body{
+    padding-top: 40px;
+}
+.card-body p{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 22px;
+    color: #22262A;
+}
+.card-body h3{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    color: #22262A;
+}
+.card-body h4{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 22px;
+    color: #22262A;
+}
+
+.card-body del{
+    color: #CF2929;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 22px;
+    padding-right: 25px;
+}
+/* Men's Fashion */
+.mens-fashion{
+    margin-top: 120px;
+    margin-bottom: 110px;
+}
+.m-fashion-heading{
+    margin-bottom: 80px;
+}
+.m-fashion-heading h3{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    color: #22262A;
+}
+.m-fashion-heading p{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 22px;
+    color: #22262A;
+}
+/* Men's fashion end */
+/* Avone Style */
+.av-style-heading h3{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    color: #22262A;
+}
+.av-style-heading p{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 22px;
+    color: #22262A;
+}
+.av-style-heading{
+    margin-bottom: 65px;
+}
+.avone-img1{
+    margin-top: 90px;
+}
+.avone-overlay-img{
+    padding-left: 25px;
+    padding-top: 20px;
+    right: -24px;
+    position: absolute;
+    background: #fff;
+    z-index: 8;
+    margin-top: -65px;
+}
+.avone-img2{
+    position: relative;
+    padding-left: 35px;
+}
+.avone-img2 a{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 22px;
+    color: #22262A;
+    margin-top: 180px;
+}
+.avone-img2 a:hover{
+    text-decoration: none;
+    text-decoration-line: none;
+    text-decoration-thickness: initial;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+}
+.womens-dress-btn{
+    float: left;
+    margin-top: 175px;
+    margin-left: 70px;
+    border-bottom: 2px solid #22262A;
+}
+.womens-dress-btn a:hover{
+    font-size: 16px;
+    color: #22262A;
+    transition: 0.7s ease-in-out;
+}
+.womens-dress-btn a{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: right;
+    color: #22262A;
+    text-transform: uppercase;
+}
+/* Avony Style End */
+/* tech19 banner start */
+.tech19-banner{
+    padding-top: 430px;
+    padding-bottom: 125px;
+    background: url(./assets/images/Banner/Tech\ 19\ Banner\ .jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 120px;
+    overflow: hidden;
+}
+.tech19-banner h2{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #22262A;
+}
+.tech19-banner h3{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 120px;
+}
+.tech19-btn{
+    padding: 10px 25px;
+    width: 214px;
+    background: #22262A;
+}
+.tech19-btn h3{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+/* Footer */
+.footer-zone{
+    background-color: #F2F8FC;
+    padding-top: 140px;
+    padding-bottom: 110px;
+    padding-left: 100px;
+}
+.footer-content1 p{
+    padding-top: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 22px;
+    color: #22262A;
+    text-transform: initial;
+}
+.footer-content1 .footer-location{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 22px;
+    color: #22262A;
+} 
+.location-logo{
+    padding-right: 25px;
+}
+.contact-mail{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 22px;
+    color: #22262A;
+    border-bottom: #22262A 1px solid;
+    width: 237px;
+}
+.contact-phone{
+    font-family: 'Poppins', sans-serif; 
+    font-style: normal; 
+    font-weight: normal; 
+    font-size: 15px; 
+    line-height: 22px;
+}
+.contact-social-icon a{
+    color: #22262A;
+    padding-right: 15px;
+}
+.contact-social-icon .fa-facebook:hover{
+    color: royalblue;
+    transition: 0.4s ease-in-out;
+}
+.fa-instagram:hover{
+    color: violet;
+    transition: 0.4s ease-in-out;
+}
+.fa-twitter:hover{
+    color: aqua;
+    transition: 0.4s ease-in-out;
+}
+.fa-linkedin:hover{
+    color: darkblue;
+    transition: 0.4s ease-in-out;
+}
+/* Foooter part 1 end */
+
+/* footer part 2 */
+.footer-2-heading{
+    font-family: 'Poppins', sans-serif; 
+    font-style: normal; 
+    font-weight: bold; 
+    font-size: 25px; 
+    line-height: 37px; 
+    color: #22262A;
+}
+.email-subscription-box{
+    background-color: #ffffff;
+    margin-top: 15px;
+}
+.email-subscription-box input{
+    width: 100%;
+    height: 45px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.07);
+    border-radius: 5px;
+    border: none;
+    margin-left: 25px;
+}
+.email-subscription-box input::placeholder{
+    font-family: 'Poppins', sans-serif; 
+    font-style: normal; 
+    font-weight: normal; 
+    font-size: 15px; 
+    line-height: 22px; 
+    color: #22262A;
+}
+.email-subscription-box button{
+    margin-right: 25px;
+    background: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.email-subscription-box button h3{
+    font-family: 'Poppins', sans-serif; 
+    font-style: normal; 
+    font-weight: 600; 
+    font-size: 15px; 
+    line-height: 22px; 
+    color: #22262A;
+    align-items: center;
+    justify-content: center;
+}
+.footer-last-section h3{
+    font-family: 'Poppins', sans-serif; 
+    font-style: normal; 
+    font-weight: 600; 
+    font-size: 20px; 
+    line-height: 30px; 
+    color: #22262A;
+}
+.footer-last-section{
+    margin-top: 70px;
+}
+.footer-last-section ul li a{
+    font-family: Poppins; 
+    font-style: normal; 
+    font-weight: normal; 
+    font-size: 14px; 
+    line-height: 22px; 
+    color: #22262A;
+    line-height: 35px;
+}
+.footer-last-section ul{
+    list-style: none;
+}
+.footer-last-section ul li{
+    list-style-type: none;
+}
+.footer-last-section ul li a:hover{
+    text-decoration: none;
+    text-decoration-line: none;
+    text-decoration-thickness: initial;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+}
+.footer-last{
+    background-color: #E7F5F8;
+    padding: 45px 0;
+    border-radius: 0px 0px 30px 30px;
+}
+.footer-last p{
+    font-family: 'Poppins', sans-serif; 
+    font-style: normal; 
+    font-weight: normal; 
+    font-size: 15px; 
+    line-height: 22px; 
+    color: #22262A;
+}
+
+
+
+/* tech19 banner end */
+
+/* font-family: 'Poppins', sans-serif; */ 
